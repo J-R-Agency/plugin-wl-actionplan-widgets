@@ -44,6 +44,7 @@ echo $args['before_title'] . $title . $args['after_title'];
 // This is where you run the code and display the output
 echo __( '', 'jr_widget_domain' );
 
+	if ( isset($user_id) && isset($site_id) ){
 
 		// Get function (returns array of IDs): 
 		print_r ( "<!-- " . get_user_favorites($user_id, $site_id) . " -->" );
@@ -56,7 +57,7 @@ echo __( '', 'jr_widget_domain' );
 
 		// Print clear favourites button
 		the_clear_favorites_button($site_id, $text);
-
+	}
 
 
 echo $args['after_widget'];
