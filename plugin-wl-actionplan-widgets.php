@@ -56,7 +56,7 @@ echo __( '', 'jr_widget_domain' );
 		// the_user_favorites_list($user_id, $site_id, $include_links = true, $filters, $include_button, $include_thumbnails = false, $thumbnail_size = 'thumbnail', $include_excerpt = false) ;
 
 		// Print clear favourites button
-		the_clear_favorites_button($site_id, $text);
+		// the_clear_favorites_button($site_id, $text);
 	} else {
 		the_user_favorites_list();
 		the_clear_favorites_button();
