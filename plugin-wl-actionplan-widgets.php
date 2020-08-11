@@ -63,7 +63,7 @@ echo __( '', 'jr_widget_domain' );
 	}
 
 
-echo $args['after_widget'];
+// echo $args['after_widget'];
 }
          
 // Widget Backend 
