@@ -58,8 +58,8 @@ echo __( '', 'jr_widget_domain' );
 		// Print clear favourites button
 		// the_clear_favorites_button($site_id, $text);
 	} else {
-		the_user_favorites_list();
-		the_clear_favorites_button();
+		// the_user_favorites_list();
+		// the_clear_favorites_button();
 	}
 
 
