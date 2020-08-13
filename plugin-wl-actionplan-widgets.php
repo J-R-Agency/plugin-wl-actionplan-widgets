@@ -59,7 +59,7 @@ class mc_actionplan_widget extends WP_Widget {
 		echo $args['after_widget'];
 	}
 
-function wl_return_goal(){
+public function wl_return_goal(){
 
 	global $goal_counter;
 	global $wl_return_goal;
