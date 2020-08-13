@@ -1,33 +1,33 @@
 <?php
 /*
 Plugin Name: Action Plan Widgets for Wellbeing Liverpool
-Plugin URI: https://www.jnragency.co.uk/
+Plugin URI: https://www.matchstickcreative.co.uk/
 Description: Action Plan Widgets for Wellbeing Liverpool
-Version: 0.2
+Version: 0.3
 Author: GM
-Author URI: https://www.jnragency.co.uk/
+Author URI: https://www.matchstickcreative.co.uk/
 */
 
 // Register and load the widget
-function jr_load_widget() {
-    register_widget( 'jr_widget' );
+function mc_load_widgets() {
+    register_widget( 'mc_actionplan_widget' );
 }
-add_action( 'widgets_init', 'jr_load_widget' );
+add_action( 'widgets_init', 'mc_load_widgets' );
  
 // Creating the widget 
-class jr_widget extends WP_Widget {
+class mc_actionplan_widget extends WP_Widget {
 	 
 	function __construct() {
 		parent::__construct(
 			 
 			// Base ID of your widget
-			'jr_widget', 
+			'mc_actionplan_widget', 
 			 
 			// Widget name will appear in UI
-			__('Wellbeing Liverpool Shortlist Widget', 'jr_widget_domain'), 
+			__('Wellbeing Liverpool Action Plan Widget', 'mc_actionplan_widget'), 
 			 
 			// Widget description
-			array( 'description' => __( 'Beta widget for displaying user shortlist', 'jr_widget_domain' ), ) 
+			array( 'description' => __( 'Beta widget for displaying user shortlist', 'mc_actionplan_widget_domain' ), ) 
 		);
 	}
 	 
@@ -42,7 +42,7 @@ class jr_widget extends WP_Widget {
 		echo $args['before_title'] . $title . $args['after_title'];
 		 
 		// This is where you run the code and display the output
-		echo __( '', 'jr_widget_domain' );
+		echo __( '', 'mc_actionplan_widget_domain' );
 
 			if ( isset($user_id) && isset($site_id) ){
 
@@ -71,7 +71,7 @@ class jr_widget extends WP_Widget {
 		if ( isset( $instance[ 'title' ] ) ) {
 			$title = $instance[ 'title' ];
 		} else {
-			$title = __( 'New title', 'jr_widget_domain' );
+			$title = __( 'New title', 'mc_actionplan_widget_domain' );
 		}
 		// Widget admin form
 		?>
