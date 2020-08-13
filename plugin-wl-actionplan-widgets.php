@@ -50,7 +50,7 @@ class mc_actionplan_widget extends WP_Widget {
 
 
 
-			wl_return_goal();
+			echo wl_return_goal();
 
 
 
