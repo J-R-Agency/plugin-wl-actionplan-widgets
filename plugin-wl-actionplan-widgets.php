@@ -116,6 +116,7 @@ class mc_actionplan_widget extends WP_Widget {
 
 			} else {
 				echo "NOT SET";
+				echo $wl_return_goal;
 			}
 
 
