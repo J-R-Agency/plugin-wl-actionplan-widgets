@@ -3,7 +3,7 @@
 Plugin Name: Action Plan Widgets for Wellbeing Liverpool
 Plugin URI: https://www.matchstickcreative.co.uk/
 Description: Action Plan Widgets for Wellbeing Liverpool
-Version: 0.5
+Version: 0.6
 Author: GM
 Author URI: https://www.matchstickcreative.co.uk/
 */
@@ -46,15 +46,8 @@ class mc_actionplan_widget extends WP_Widget {
 		// This is where you run the code and display the output
 		echo __( '', 'mc_actionplan_widget_domain' );
 
-			echo "ACTION PLAN WIDGET";
-
-
-
+			// Display Goal - dependency on Action Plan plugin
 			echo wl_return_goal();
-
-
-
-
 
 		echo $args['after_widget'];
 	}
