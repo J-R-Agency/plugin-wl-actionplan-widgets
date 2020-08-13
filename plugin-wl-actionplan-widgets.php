@@ -103,7 +103,7 @@ class mc_actionplan_widget extends WP_Widget {
 	$wl_repeat_check = mt_rand();
 
 
-
+				echo $wl_return_goal;
 
 
 
