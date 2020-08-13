@@ -55,7 +55,7 @@ class mc_actionplan_widget extends WP_Widget {
 	global $wl_repeat_check;
 	global $wl_repeat_store;
 
-	// $wl_repeat_check = null;
+	 $wl_repeat_check = null;
 	// $wl_repeat_store = null; 
 
 
