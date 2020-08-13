@@ -11,6 +11,7 @@ Author URI: https://www.matchstickcreative.co.uk/
 // Register and load the widget
 function mc_load_widgets() {
     register_widget( 'mc_actionplan_widget' );
+    register_widget( 'mc_shortlist_widget' );
 }
 add_action( 'widgets_init', 'mc_load_widgets' );
  
